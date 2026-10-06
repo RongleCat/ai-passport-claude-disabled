@@ -1,0 +1,21 @@
+idf_component_register(
+    SRCS "main.c"
+         "ban_logic.c"
+         "ban_port.c"
+         "ban_ui.c"
+         "ban_ui_home.c"
+         "ban_ui_scan.c"
+         "ban_ui_event.c"
+         "ban_ui_ban.c"
+         "ban_ui_appeal.c"
+         "ban_ui_over.c"
+         "ban_sfx.c"
+         "ban_sfx_data.c"
+         "ban_assets.c"
+         "ban_font_zh_12.c"
+         "ban_font_zh_16.c"
+         "ban_font_zh_24.c"
+         "ban_font_latin_8.c"
+    INCLUDE_DIRS "."
+    REQUIRES bsp lvgl freertos esp_timer heap
+)

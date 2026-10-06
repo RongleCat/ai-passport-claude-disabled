@@ -1,0 +1,37 @@
+Ban-o-meter font sources
+========================
+
+Chinese UI: Noto Sans SC Regular
+  Name table: Noto Sans SC, Version 2.004
+  Copyright: (c) 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.
+  License: SIL Open Font License 1.1
+  License text: managed_components/lvgl__lvgl/tests/src/test_files/fonts/noto/OFL.txt
+  File used in place (not copied; about 10 MB):
+    managed_components/lvgl__lvgl/tests/src/test_files/fonts/noto/NotoSansSC-Regular.ttf
+  The same face is already vendored with LVGL in this tree. Generated symbols
+  are named ban_font_*, not "Source" or "Noto", so the reserved name is kept
+  on the font software itself.
+  Sizes: 12 px, 16 px, 24 px. 4 bpp, uncompressed.
+  Outputs: main/ban_font_zh_12.c, main/ban_font_zh_16.c, main/ban_font_zh_24.c
+
+Latin letters and digits: Press Start 2P
+  Copyright 2012 The Press Start 2P Project Authors, Reserved Font Name "Press Start 2P".
+  License: SIL Open Font License 1.1 (fonts/OFL-PressStart2P.txt)
+  File: fonts/PressStart2P-Regular.ttf
+  Size: 8 px (the face's native pixel size), 1 bpp, no autohint, no kerning.
+  Output: main/ban_font_latin_8.c
+  Only the ASCII characters that appear in the copy table are embedded.
+
+Zpix was not used.
+  The publisher (SolidZORO) does not ship Zpix under the OFL. Commercial use
+  is a paid per-product license. Personal use is free, but that does not grant
+  redistribution inside this firmware. The file was not downloaded.
+
+Converter: npx lv_font_conv@1.5.3
+  Command lives in tools/ban_fonts.py.
+  Character list is extracted from the BAN_STRINGS region of main/ban_logic.c
+  (on-screen copy, the full disclaimer, the English disclaimer, and runtime digits).
+  main/ban_font_charset.h is the sorted code-point list the host test checks.
+
+Sound effects are not fonts. tools/ban_sfx.py synthesizes them. No samples
+from a third party are embedded.
